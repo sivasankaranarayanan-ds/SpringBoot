@@ -4,6 +4,8 @@ import com.example.employee1.Employee1.DTO.EmployeeDTO;
 import com.example.employee1.Employee1.Repo.EmpRepo;
 import com.example.employee1.Employee1.Services.EmployeeServices;
 import com.example.employee1.Employee1.entity.Employee;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -52,5 +54,14 @@ public class EmployeeController
     public String deleteEmployee(@PathVariable int id){
         String ids = empServices.deleteEmp(id);
         return ids;
+    }
+
+    //Logger example
+    @GetMapping("/getLogger")
+    public String sayHello()
+    {
+        Logger logger = LoggerFactory.getLogger(EmployeeController.class);
+        logger.info("Hello info level");
+        return "hello";
     }
 }
