@@ -1,0 +1,22 @@
+Define Docker?
+    Using Docker with Spring Boot is a common practice to containerize your applications,
+    making them portable, scalable, and easier to deploy.
+    Docker containers provide an isolated environment for running applications,
+    along with their dependencies, ensuring consistent behavior across different environments.
+
+Create Docker File:
+    This file contains instructions for building a Docker image for your application.
+
+Build Docker Image:
+    Open a terminal in the directory containing your Dockerfile and
+    run the following command to build a Docker image: docker build -t your-image-name .
+
+Run Docker Container:
+    Once the Docker image is built,
+    you can run a Docker container using the following command: docker run -p 8080:8080 your-image-name
+    This command maps port 8080 of the container to port 8080 on your host machine.
+    Replace your-image-name with the name of your Docker image.
+
+Access Your Application:
+    Your Spring Boot application should now be running inside a Docker container. You can access it
+    by navigating to http://localhost:8080 in your web browser or by sending HTTP requests to port 8080.
