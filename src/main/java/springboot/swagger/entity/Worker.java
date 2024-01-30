@@ -1,5 +1,6 @@
 package springboot.swagger.entity;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.*;
 import springboot.swagger.dto.WorkerDTO;
 import lombok.*;
@@ -9,17 +10,25 @@ import lombok.*;
 @AllArgsConstructor
 @Entity
 @Table(name="workerdetails")
+@Schema(description = "Worker Detailed Information")
 public class Worker
 {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
+    @Schema(accessMode = Schema.AccessMode.READ_ONLY, description = "Worker Id", example = "111")
     private int id;
+
     @Column(name = "age")
+    @Schema(description = "Worker's Age",example = "44")
     private int age;
+
     @Column(name = "name")
+    @Schema(description = "Worker's Name",example = "Lyon")
     private String name;
+
     @Column(name = "address")
+    @Schema(description = "Worker's Address",example = "67, Paul's Street, Los Angels")
     private String address;
 
 
