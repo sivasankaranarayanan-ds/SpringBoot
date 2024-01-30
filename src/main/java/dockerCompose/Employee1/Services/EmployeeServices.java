@@ -1,8 +1,8 @@
-package com.example.employee1.Employee1.Services;
+package dockerCompose.Employee1.Services;
 
-import com.example.employee1.Employee1.DTO.EmployeeDTO;
-import com.example.employee1.Employee1.entity.Employee;
-import com.example.employee1.Employee1.Repo.EmpRepo;
+import dockerCompose.Employee1.DTO.EmployeeDTO;
+import dockerCompose.Employee1.Repo.EmpRepo;
+import dockerCompose.Employee1.entity.Employee;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;

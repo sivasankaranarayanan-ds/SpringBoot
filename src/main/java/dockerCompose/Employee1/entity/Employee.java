@@ -1,6 +1,6 @@
-package com.example.employee1.Employee1.entity;
+package dockerCompose.Employee1.entity;
 
-import com.example.employee1.Employee1.DTO.EmployeeDTO;
+import dockerCompose.Employee1.DTO.EmployeeDTO;
 import jakarta.persistence.*;
 import lombok.*;
 

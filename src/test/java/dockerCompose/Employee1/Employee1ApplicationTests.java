@@ -1,4 +1,4 @@
-package com.example.employee1.Employee1;
+package dockerCompose.Employee1;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
